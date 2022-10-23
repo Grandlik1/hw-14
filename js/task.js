@@ -1,6 +1,6 @@
 let num = +prompt('Введите число')  ;
 let reply = true;
-if(num ===1 ){
+if(num === 1 ){
     reply = false;
 } else {
     for (let i = 2; i < num; i++) {
