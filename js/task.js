@@ -1,9 +1,14 @@
-let num = prompt('Введите число')  ;
+let num = +prompt('Введите число')  ;
 let reply = true;
-for (let i = 2; i < num; i++) {
-    if (num % i == 0) {
-        reply = false;
-        break;
+if(num ===1 ){
+    reply = false;
+} else {
+    for (let i = 2; i < num; i++) {
+        if (num === 1 || num % i === 0   ){
+            reply = false;
+            break;
+        }
     }
 }
+
 alert(reply);
